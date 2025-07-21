@@ -8,8 +8,13 @@ export default function PageHero() {
             alt="Hero Image"
             width={500}
             height={300}
-            className="w-ful h-full object-cover"
+            className="w-full h-[] object-cover"
         />
+        <div className="absolute text-white text-3xl font-bold flex flex-col justify-center items-center">
+            <p>Welcome to My Portfolio</p>
+            <p className="text-xl mt-2">I'm Idris Habeeb</p>
+            <p>Explore My Work and Projects</p>
+    </div>
     </div>
   );
 }

@@ -1,20 +1,30 @@
-
+"use client";
+import { useState } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Topbar() {
+    const [isOpen, setIsOpen] = useState(false);
+    // Toggle the menu open state
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
     return (
-        <div className="w-full min-h-15 flex justify-center items-center bg-[var(--gray-1)]">
-            <div className=" w-4/5 lg:w-9/10 flex items-center justify-between lg:px-4 py-2 text-white ">
+        <div className="w-full min-h-15 flex flex-col justify-center items-center bg-[var(--gray-1)] pb-3 lg:flex-row lg:justify-around lg:items-center lg:px-6 lg:py-4 ">
+            <div className=" w-4/5 flex items-center justify-between lg:px-4 py-2 text-white lg:w-1/5">
             <div className="text-[14px] lg:text-[20px] w-2/5">E-portfolio</div>
-            <div className="hidden lg:flex lg:w-4/5 items-center justify-between">
-                <ul className="flex flex-row items-center justify-between lg:w-1/2">
-                    <li className="text-[var(--red-1)]"><a href="">Home</a></li>
-                    <li><a href=''>About</a></li>
-                    <li><a href=''>Projects</a></li>
-                    <li><a href=''>Contact</a></li>
-                </ul>
-            <div className=" w-15 h-15 rounded-full bg-amber-500 flex justify-center items-center font-extrabold"><p>IH</p> </div>
-            </div>    
+            <RxHamburgerMenu onClick={toggleMenu} className="text-white text-[36px] border-white border-1 p-1 lg:hidden" />   
             </div>
+            <div className={`overflow-hidden transition-all duration-700 ease-in-out ${
+                isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                } w-4/5 flex-col justify-start items-start gap-5 lg:flex lg:flex-row lg:w-3/5 lg:justify-between lg:max-h-full lg:opacity-100`}>
+                <ul className="w-full flex flex-col text-[var(--gray-2)] lg:flex-row justify-start items-start gap-3 lg:items-center lg:justify-between lg:w-1/2 lg:text-[19px]">
+                    <li className="w-full"><a href="">Home</a></li>
+                    <li className="w-full"><a href=''>About</a></li>
+                    <li className="w-full"><a href=''>Projects</a></li>
+                    <li className="w-full"><a href=''>Contact</a></li>
+                </ul>
+            <div className=" w-8 h-8 rounded-full bg-[var(--red-1)] text-white flex justify-center items-center font-bold mt-3 lg:mt-0"><p>IH</p> </div>
+            </div> 
         </div>
     )
 }
