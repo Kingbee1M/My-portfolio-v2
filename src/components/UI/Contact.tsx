@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Contact() {
     return (
-        <div className="w-full h-auto flex flex-col items-center justify-start gap-3 pt-15">
+        <div className="w-full h-auto flex flex-col items-center justify-start gap-3 pt-15" id="Contact">
             <h1 className="text-[30px] text-[var(--blue-1)]">Contact Me</h1>
             <div className="w-full h-auto flex flex-col items-start justify-evenly gap-15 p-20 text-white lg:flex-row">
                 <div className="flex flex-col gap-4">

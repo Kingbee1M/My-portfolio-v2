@@ -21,6 +21,7 @@ export default function About() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut" }}
             className="w-full flex flex-col items-center justify-start h-auto mt-15 lg:mt-19 lg:flex-row"
+            id="About"
         >
             <div className="w-full h-[500px] flex justify-center items-start relative lg:w-2/5">
                 <div className="border-[var(--red-1)] border-4 h-[420px] w-2/3 absolute right-3 top-2 -z-10 lg:w-1/2 lg:right-10 lg:-translate-x-1/6"></div>

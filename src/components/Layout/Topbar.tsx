@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
 
 export default function Topbar() {
     const [isOpen, setIsOpen] = useState(false);
-    // Toggle the menu open state
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
@@ -18,10 +18,10 @@ export default function Topbar() {
                 isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 } w-4/5 flex-col justify-start items-start gap-5 lg:flex lg:flex-row lg:w-3/5 lg:justify-between lg:max-h-full lg:opacity-100`}>
                 <ul className="w-full flex flex-col text-[var(--gray-2)] lg:flex-row justify-start items-start gap-3 lg:items-center lg:justify-between lg:w-1/2 lg:text-[19px]">
-                    <li className="w-full"><a href="" className="hover:text-[var(--gray-3)]">Home</a></li>
-                    <li className="w-full"><a href='' className="hover:text-[var(--gray-3)]">About</a></li>
-                    <li className="w-full"><a href='' className="hover:text-[var(--gray-3)]">Projects</a></li>
-                    <li className="w-full"><a href='' className="hover:text-[var(--gray-3)]">Contact</a></li>
+                    <li className="w-full"><Link href="#Home" className="hover:text-[var(--gray-3)]">Home</Link></li>
+                    <li className="w-full"><Link href='#About' className="hover:text-[var(--gray-3)]">About</Link></li>
+                    <li className="w-full"><Link href='#Projects' className="hover:text-[var(--gray-3)]">Projects</Link></li>
+                    <li className="w-full"><Link href='#Contact' className="hover:text-[var(--gray-3)]">Contact</Link></li>
                 </ul>
             <div className=" w-10 h-10 rounded-full bg-[var(--red-1)] text-white flex justify-center items-center font-bold mt-3 lg:mt-0"><p>IH</p> </div>
             </div> 

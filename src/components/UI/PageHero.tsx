@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PageHero() {
   return (
-    <div className="w-full h-auto flex justify-center items-center ">
+    <div className="w-full h-auto flex justify-center items-center " id="Home">
         <Image 
             src="/images/hero-image.jpg"
             alt="Hero Image"

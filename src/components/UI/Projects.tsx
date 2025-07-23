@@ -32,7 +32,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="w-full h-auto flex flex-wrap items-center justify-center p-5 mt-20">
+    <div className="w-full h-auto flex flex-wrap items-center justify-center p-5 mt-20" id="Projects">
       {projects.map((project, index) => {
         const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
