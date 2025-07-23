@@ -78,31 +78,27 @@ export default function Skills() {
             <h1 className="w-full text-[30px] text-[var(--gray-5) text-center">My Skills</h1>
             <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-5 lg:w-3/4">
                 {skills.map((skill, index) => (
-<div
-  key={index}
-  className="w-1/3 h-[100px] flex flex-col items-center justify-center gap-2 mt-5 shadow-lg shadow-black rounded-lg group relative overflow-hidden"
->
-  <div className="flex flex-col items-center justify-center gap-2">
-    <Image
-      src={skill.icon}
-      alt={`${skill.name} icon`}
-      width={40}
-      height={40}
-      className="w-8 h-8"
-    />
-    <p className="text-[var(--gray-5)]">{skill.name}</p>
-  </div>
+                <div key={index} className="w-1/3 h-[100px] flex flex-col items-center justify-end gap-2 mt-5 shadow-lg shadow-black rounded-lg group relative overflow-hidden lg:w-1/5 lg:gap-4">
+                    <div className="flex flex-col items-center justify-center gap-2">
+                        <Image
+                        src={skill.icon}
+                        alt={`${skill.name} icon`}
+                        width={40}
+                        height={40}
+                        className="w-8 h-8"
+                        />
+                        <p className="text-[var(--gray-5)]">{skill.name}</p>
+                    </div>
 
-  {/* Slide-up overlay with fixed height */}
-  <div
-    className="absolute bottom-0 w-full h-full translate-y-full group-hover:translate-y-0 
-               transition-transform duration-500 ease-in-out 
-               bg-[rgba(255,0,0,0.5)] backdrop-blur-sm 
-               text-center text-white flex justify-center items-center"
-  >
-    {skill.percent}
-  </div>
-</div>
+                    {/* Slide-up + Fade-in overlay */}
+                    <div className="absolute w-full translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-hover:z-10
+                        transition-all duration-500 ease-in-out
+                        bg-[rgba(255,0,0,0.5)] backdrop-blur-sm 
+                        text-center text-white flex justify-center items-center"
+                        style={{ height: skill.percent }}>
+                        {skill.percent}
+                    </div>
+                </div>
                 ))}
             </div>
         </div>
