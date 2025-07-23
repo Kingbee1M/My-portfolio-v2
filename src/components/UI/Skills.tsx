@@ -74,11 +74,11 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className="w-9/10 flex flex-col items-center justify-center h-auto mt-15 lg:mt-19">
+        <div className="w-9/10 flex flex-col items-center justify-center h-auto mt-15 lg:mt-19 bg-[var(--deep-blue)]">
             <h1 className="w-full text-[30px] text-[var(--gray-5) text-center">My Skills</h1>
             <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-5 lg:w-3/4">
                 {skills.map((skill, index) => (
-                <div key={index} className="w-1/3 h-[100px] flex flex-col items-center justify-end gap-2 mt-5 shadow-lg shadow-black rounded-lg group relative overflow-hidden lg:w-1/5 lg:gap-4">
+                <div key={index} className="w-1/3 h-[100px] flex flex-col items-center justify-end gap-2 mt-5 shadow-lg rounded-lg group relative overflow-hidden lg:w-1/5 lg:gap-4">
                     <div className="flex flex-col items-center justify-center gap-2">
                         <Image
                         src={skill.icon}
@@ -104,6 +104,7 @@ export default function Skills() {
         </div>
     );
 }
+                    // style={{ boxShadow: `0 4px 10px var(--gray-4)` }}
 
                 // {skills.map((skill, index) => (
                 //     <div key={index} className="w-full flex flex-col items-start justify-start gap-2 mt-5">
