@@ -3,6 +3,7 @@ import About from "@/components/UI/About";
 import Skills from "@/components/UI/Skills";
 import Services from "@/components/UI/Services";
 import Projects from "@/components/UI/Projects";
+import Contact from "@/components/UI/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="w-full bg-[var(--deep-blue)] pb-15 my-12 "><Skills /></div>
       <Services />
       <Projects />
+      <div className="w-full bg-[var(--deep-blue)] pb-15 mt-12" ><Contact /></div>
     </div>
   );
 }

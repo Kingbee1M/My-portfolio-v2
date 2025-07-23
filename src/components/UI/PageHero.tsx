@@ -14,7 +14,7 @@ export default function PageHero() {
         <div className="absolute z-20 text-white text-3xl font-bold flex flex-col justify-center items-center gap-5">
             <p className="text-[40px] text-[var()] ">Welcome</p>
             <p className="text-[25px] text-[var()]">I&apos;m <span className="text-[var(--red-1)]">Idris</span> Habeeb</p>
-            <p className="text-[15px] text-[var(--red-1)] py-2 px-4 rounded-[14px] bg-[var(--red-2)] ">Website & mibile App Frontend Developer</p>
+            <p className="text-[15px] text-[var(--red-1)] py-2 px-4 rounded-[14px] bg-[var(--red-2)] ">Website & mobile App Frontend Developer</p>
     </div>
     </div>
   );
