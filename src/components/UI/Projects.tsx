@@ -26,6 +26,13 @@ const projects = [
       "A clean and informative single-page website built for Aegis Cards, designed to present services and provide an easy contact point for inquiries.",
     techStack: ["Vue 3", "JavaScript"],
   },
+  {
+    name: "infinitet solutiton old websitet",
+    image: "/images/infinite solutions.png",
+    link: "https://infinite-solutions-old-site.vercel.app/",
+    description: "A modern and responsive website for Infinite Solutions, showcasing their services and expertise in a user-friendly format.",
+    techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
+  }
 ];
 
 export default function Projects() {
