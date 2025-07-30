@@ -32,7 +32,14 @@ const projects = [
     link: "https://infinite-solutions-old-site.vercel.app/",
     description: "A modern and responsive website for Infinite Solutions, showcasing their services and expertise in a user-friendly format.",
     techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
-  }
+  },
+  {
+    name: "Oceanica",
+    image: "/images/Oceanica.jpg",
+    link: "https://oceanicaweb.netlify.app/",
+    description: "A modern, visually engaging tourism landing page built with React and Tailwind CSS. The site features a glassmorphic design, animated destination slider, and responsive layout. It highlights travel packages, client testimonials, and emphasizes seamless user experience for promoting exotic destinations.",
+    techStack: ["React", "Tailwind CSS", "TypeScript"],
+  },
 ];
 
 export default function Projects() {
