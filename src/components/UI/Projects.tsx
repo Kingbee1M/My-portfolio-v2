@@ -37,7 +37,7 @@ const projects = [
     name: "Oceanica",
     image: "/images/Oceanica.jpg",
     link: "https://oceanicaweb.netlify.app/",
-    description: "A modern, visually engaging tourism landing page built with React and Tailwind CSS. The site features a glassmorphic design, animated destination slider, and responsive layout. It highlights travel packages, client testimonials, and emphasizes seamless user experience for promoting exotic destinations.",
+    description: "A modern, visually engaging tourism landing page, It highlights travel packages, client testimonials, and emphasizes seamless user experience for promoting exotic destinations.",
     techStack: ["React", "Tailwind CSS", "TypeScript"],
   },
 ];
