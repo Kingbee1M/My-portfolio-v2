@@ -55,14 +55,14 @@ export default function ProjectCard({
             </a>
             <FaLongArrowAltRight />
           </div>
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap items-center gap-y-2">
             {techStack.map((tech, idx) => (
-              <span
+              <p
                 key={idx}
                 className="inline-block bg-gray-200 text-gray-700 text-sm px-2 py-1 rounded mr-2"
               >
                 {tech}
-              </span>
+              </p>
             ))}
           </div>
         </div>

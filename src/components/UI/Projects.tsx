@@ -10,21 +10,21 @@ const projects = [
       "A visually engaging and fully responsive landing page featuring sleek UI components and modern design patterns.",
     techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
+  // {
+  //   name: "Datawise",
+  //   image: "/images/Datawise.png",
+  //   link: "https://datawiseai.netlify.app/",
+  //   description:
+  //     "A mobile-friendly landing page for an AI-powered platform that delivers advanced data analysis and visualization tools.",
+  //   techStack: ["Vue 3", "JavaScript"],
+  // },
   {
-    name: "Datawise",
-    image: "/images/Datawise.png",
-    link: "https://datawiseai.netlify.app/",
+    name: "Fasco Ecommerce website",
+    image: "/images/Fasco.png",
+    link: "https://fasco-poject.vercel.app/",
     description:
-      "A mobile-friendly landing page for an AI-powered platform that delivers advanced data analysis and visualization tools.",
-    techStack: ["Vue 3", "JavaScript"],
-  },
-  {
-    name: "Aegis Cards Website",
-    image: "/images/Aegis-cards.png",
-    link: "https://aegis-cards.netlify.app/",
-    description:
-      "A clean and informative single-page website built for Aegis Cards, designed to present services and provide an easy contact point for inquiries.",
-    techStack: ["Vue 3", "JavaScript"],
+      "A modern, responsive fashion store built for style and functionality. It features a sleek interface, dynamic product listings, category filters, and a smooth checkout flow.",
+    techStack: ["Next js", "Typescript", "Framer animation UI", "Tailwind"],
   },
   {
     name: "infinitet solutiton old websitet",
@@ -45,7 +45,7 @@ const projects = [
 export default function Projects() {
   return (
     <div
-      className="w-full h-auto flex flex-wrap items-center justify-center p-5 mt-20"
+      className="w-full h-auto flex flex-wrap items-center justify-center p-5 mt-20 gap-x-5"
       id="Projects"
     >
       {projects.map((project, index) => (
