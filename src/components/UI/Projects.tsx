@@ -23,7 +23,7 @@ const projects = [
     image: "/images/Fasco.png",
     link: "https://fascofasion.vercel.app/",
     description:
-      "A modern, responsive fashion store built for style and functionality. It features a sleek interface, dynamic product listings, category filters, and a smooth checkout flow,",
+      "A modern, responsive fashion store built for style and functionality. It features a sleek interface, dynamic product listings, category filters, and a smooth checkout flow.",
     techStack: ["Next js", "Typescript", "Framer animation UI", "Tailwind"],
   },
   {
