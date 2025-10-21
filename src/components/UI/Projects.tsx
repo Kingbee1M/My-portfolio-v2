@@ -21,9 +21,9 @@ const projects = [
   {
     name: "Fasco Ecommerce website",
     image: "/images/Fasco.png",
-    link: "https://fasco-poject.vercel.app/",
+    link: "https://fascofasion.vercel.app/",
     description:
-      "A modern, responsive fashion store built for style and functionality. It features a sleek interface, dynamic product listings, category filters, and a smooth checkout flow.",
+      "A modern, responsive fashion store built for style and functionality. It features a sleek interface, dynamic product listings, category filters, and a smooth checkout flow,",
     techStack: ["Next js", "Typescript", "Framer animation UI", "Tailwind"],
   },
   {
