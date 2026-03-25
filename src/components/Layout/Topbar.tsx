@@ -9,9 +9,9 @@ export default function Topbar() {
         setIsOpen(!isOpen);
     }
     return (
-        <div className="fixed top-0 left-0 z-30 w-full min-h-15 flex flex-col justify-center items-center bg-[var(--gray-1)] pb-3 lg:flex-row lg:justify-around lg:items-center lg:px-6 lg:py-4">
+        <div className="fixed top-0 left-0 z-60 w-screen min-h-15 flex flex-col justify-center items-center bg-[var(--gray-1)] pb-3 lg:flex-row lg:justify-around lg:items-center lg:px-6 lg:py-4">
             <div className=" w-4/5 flex items-center justify-between lg:px-4 py-2 text-white lg:w-1/5">
-            <div className="text-[14px] lg:text-[20px] w-2/5">E-portfolio</div>
+            <div className="text-[14px] xl:text-xl w-[49%]">E-portfolio</div>
             <RxHamburgerMenu onClick={toggleMenu} className="text-white text-[36px] border-white border-1 p-1 lg:hidden" />   
             </div>
             <div className={`overflow-hidden transition-all duration-700 ease-in-out ${

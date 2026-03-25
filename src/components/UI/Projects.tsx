@@ -45,7 +45,7 @@ const projects = [
 export default function Projects() {
   return (
     <div
-      className="w-full h-auto flex flex-wrap items-center justify-center p-5 mt-20 gap-x-5"
+      className="w-full h-auto flex flex-wrap items-center justify-center p-5 pt-20 gap-x-5 bg-white"
       id="Projects"
     >
       {projects.map((project, index) => (

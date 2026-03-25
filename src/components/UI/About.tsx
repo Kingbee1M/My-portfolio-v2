@@ -20,7 +20,7 @@ export default function About() {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="w-full flex flex-col items-center justify-start h-auto mt-15 lg:mt-19 lg:flex-row"
+            className="w-full flex flex-col items-center justify-start h-auto pt-15 lg:pt-19 lg:flex-row bg-white pb-7"
             id="About"
         >
             <div className="w-full h-[500px] flex justify-center items-start relative lg:w-2/5">
@@ -37,7 +37,7 @@ export default function About() {
                 <h1 className="text-4xl font-extralight">Idris Habeeb</h1>
                 <p className="text-2xl text-[var(--red-1)] font-bold">Website & Mobile App Frontend Developer</p>
                 <p>
-                    I am a passionate front-end developer with experience in building dynamic and responsive web applications using frameworks such as Next.js, Vue.js, and Tailwind CSS. Skilled in state management with Pinia and Zustand, API integration, and optimizing user experiences. I also have experience in building mobile app frontends using Expo (React Native). Additionally, I work with backend technologies, including PHP, MySQL, and Laravel.
+                    I am a Microsoft certified full stack web/mobile app developer with experience in building dynamic and responsive and scalable applications using frameworks such as Next.js, Vue.js, and Tailwind CSS. Skilled in state management with Pinia and Zustand, API integration, and optimizing user experiences with a large understanding and experience with ATS, CRM and HRM platforms. I also have experience in building mobile app frontends using Expo (React Native). Additionally, I work with backend technologies, including Nest js, PostgreSQL and MySQL
                 </p>
                 <div className="w-full flex flex-col items-start justify-start">
                     {details.map((detail, index) => (
@@ -50,7 +50,7 @@ export default function About() {
                             <div className={`${detail.style} w-0 h-5 border-2 border-[var(--gray-1)] ml-[11px]`}></div>
                         </div>
                     ))}
-                    <a href="/habeeb Resume 2.0.pdf" download className="ml-2 text-[var(--red-1)] border-2 px-5 py-3 rounded-[8px] mt-3">
+                    <a href="/Habeeb Resume.pdf" download className="ml-2 text-[var(--red-1)] border-2 px-5 py-3 rounded-[8px] mt-3">
                         DOWNLOAD CV
                     </a>
                 </div>

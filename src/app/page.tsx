@@ -10,10 +10,10 @@ export default function Home() {
     <div className="w-full flex flex-col items-center justify-start min-h-screen mt-15 lg:mt-19">
       <PageHero />
       <About />
-      <div className="w-full bg-[var(--deep-blue)] pb-15 my-12 "><Skills /></div>
+      <div><Skills /></div>
       <Services />
       <Projects />
-      <div className="w-full bg-[var(--deep-blue)] pb-15 mt-12" ><Contact /></div>
+      <div className="w-full bg-[var(--deep-blue)] pb-15 pt-12" ><Contact /></div>
     </div>
   );
 }

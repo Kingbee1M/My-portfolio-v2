@@ -36,7 +36,7 @@ const service = [
 
 export default function Services() {
     return (
-        <div className="w-full h-auto flex flex-row items-center justify-center p-5 mt-20">
+        <div className="w-full h-auto flex flex-row items-center justify-center p-5 mt-20 bg-white lg:py-7">
             {service.map((item, index) => {
             const Icon = iconMap[item.icon];
             return (

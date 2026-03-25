@@ -32,7 +32,7 @@ const skills = [
   },
   {
     name: "React",
-    icon: "/images/icons8-react-24.png",
+    icon: "/images/React.svg",
     percent: "50%",
   },
   {
@@ -56,8 +56,8 @@ const skills = [
     percent: "73%",
   },
   {
-    name: "PHP",
-    icon: "/images/icons8-php-logo.svg",
+    name: "Nest.js",
+    icon: "/images/Nest.js.svg",
     percent: "40%",
   },
   {
@@ -66,9 +66,9 @@ const skills = [
     percent: "32%",
   },
   {
-    name: "MySQL",
-    icon: "/images/mysql.svg",
-    percent: "20%",
+    name: "PostgreSQL",
+    icon: "/images/PostgresSQL.svg",
+    percent: "60%",
   },
   {
     name: "git",
@@ -84,17 +84,18 @@ export default function Skills() {
   return (
     <div
       ref={ref}
-      className="w-9/10 flex flex-col items-center justify-center h-auto mt-15 lg:mt-19 bg-[var(--deep-blue)]"
+      className="w-full lg:w-9/10 flex flex-col items-center justify-center h-auto relative"
     >
+      <div className="w-screen lg:w-[1396px] h-[1105px] lg:h-[685px] bg-[#00000062] absolute top-0 z-10" />
       <h1 className="w-full text-[30px] text-white text-center">My Skills</h1>
-      <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-5 lg:w-3/4">
+      <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-5 lg:w-3/4 z-40">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1.3, delay: index * 0.08 }}
-            className="w-1/3 h-[100px] flex flex-col items-center justify-end gap-2 mt-5 shadow-lg rounded-lg group relative overflow-hidden lg:w-1/5 lg:gap-4"
+            className="w-1/3 border-gray-400 border h-[100px] flex flex-col items-center justify-end gap-2 mt-5 shadow-lg rounded-lg group relative overflow-hidden lg:w-1/5 lg:gap-4"
           >
             <div className="flex flex-col items-center justify-center gap-2">
               <Image
