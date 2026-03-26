@@ -86,7 +86,7 @@ export default function Skills() {
       ref={ref}
       className="w-full lg:w-9/10 flex flex-col items-center justify-center h-auto relative"
     >
-      <div className="w-screen lg:w-[1396px] h-[1105px] lg:h-[685px] bg-[#00000062] absolute top-0 z-10" />
+      <div className="w-screen lg:w-[1480px] h-[1105px] lg:h-[685px] bg-[#00000062] absolute top-0 z-10" />
       <h1 className="w-full text-[30px] text-white text-center">My Skills</h1>
       <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-5 lg:w-3/4 z-40">
         {skills.map((skill, index) => (
